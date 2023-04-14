@@ -9,16 +9,17 @@ intent(`(Give me | tell me | show me) the news (from | by | on | in) $(source* .
         NEWS_API_URL = `${NEWS_API_URL}&sources=${p.source.value.toLowerCase().split(" ").join('-')}`
     }
         
-        api.axios.get(NEWS_API_URL).then((response)=>{
-        let {articles} = response.data;
-        if(!articles.length){
-            p.play('Sorry, please try searching for news from a different source');
-            return;
-        }
+    api.request(NEWS_API_URL, {headers: {"user-agent": 'user agent' }}, (error, response, body) => {
+    const { totalResults, articles } = JSON.parse(body);
+    
+    if(totalResults == 0) {
+        p.play('Sorry, please try searching for news from a different source');
+        return;
+    }
         
       savedArticles = articles;
         
         p.play({ command: 'newHeadlines', articles });
-        p.play(`Here are the (latest|recent) ${p.source.value}. news`);
+        p.play(`Here are the (latest|recent) (from | by | on | in) ${p.source.value}`);
     });
 });
