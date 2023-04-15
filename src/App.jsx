@@ -9,25 +9,28 @@ export default function App() {
   const [newsArticles, setNewsArticles] = useState([]);
 
   useEffect(() => {
-    console.clear()
-
+    console.clear();
     alanBtn({
       key: alanKey,
       onCommand: ({ command, articles }) => {
         if (command === 'newHeadlines') {
-          console.log(articles)
-          setNewsArticles(articles)
+          setNewsArticles(articles);
+        } else {
+          console.log('command NOT correct');
         }
       }
-    })
+    });
+  }, []);
 
-  }, [])
+  useEffect(() => {
+    console.log('This is from the State:', newsArticles);
+  }, [newsArticles]);
 
 
   return (
-    <>
-      News Brain
-      <NewsCards articles={newsArticles} />
-    </>
+    <div>
+      <h1>News Brain</h1>
+      {/* <NewsCards articles={newsArticles} /> */}
+    </div>
   )
 }
