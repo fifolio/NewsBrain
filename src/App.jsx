@@ -4,7 +4,9 @@ const alanKey = 'c5a66bb5abc2aa65c4db81d3452c51ab2e956eca572e1d8b807a3e2338fdd0d
 
 import NewsCards from './components/NewsCards/NewsCards';
 
+
 export default function App() {
+
 
   const [newsArticles, setNewsArticles] = useState([]);
 
@@ -26,10 +28,10 @@ export default function App() {
     console.log('This is from the State:', newsArticles);
   }, [newsArticles]);
 
-
   return (
     <div>
-      <h1>News Brain</h1>
+
+      {/* <center>News Brain</center> */}
       <NewsCards theArticles={newsArticles} />
     </div>
   )
