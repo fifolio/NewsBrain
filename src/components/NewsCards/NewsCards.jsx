@@ -16,7 +16,7 @@ export default function NewsCards({ theArticles }) {
 
                 {theArticles.map((article, index) => (
 
-                    <Grid item sx={6} md={4} lg={3} style={{ display: 'flex' }}>
+                    <Grid key={index} item xs={6} md={4} lg={3} style={{ display: 'flex' }}>
                         <NewsCard article={article} index={index} />
                     </Grid>
 
