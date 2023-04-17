@@ -16,7 +16,7 @@ export default function HeroSection() {
 
     return (
         <Grid container style={styles.main}>
-            <Grid item style={styles.item1} xs={12} md={12} lg={12}>
+            <Grid item style={styles.item1} xs={12} md={12} lg={12} my={6}>
                 <Typography variant="h4" style={styles.item.title}>
                     WELCOME TO NEWSBRAIN
                 </Typography>

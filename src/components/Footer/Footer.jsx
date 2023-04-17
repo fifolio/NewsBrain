@@ -9,7 +9,8 @@ const styles = {
         fontWeight: 700,
         // letterSpacing: '.3rem',
         color: '#6d6d6d',
-        marginTop: '100px'
+        marginTop: '100px',
+        fontSize: 'small',
     }
 }
 

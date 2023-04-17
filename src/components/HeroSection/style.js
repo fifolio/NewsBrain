@@ -1,6 +1,7 @@
 const styles = {
     main: {
         width: '100%',
+        marginTop: '20px',
         marginBottom: '100px',
         textAlign: 'center',
         color: 'black',
@@ -13,7 +14,7 @@ const styles = {
         title: {
         textAlign: 'center',
         width: '100%',
-        paddingTop: '180px',
+        paddingTop: '100px',
         fontWeight: 700,
         fontFamily: 'monospace',
         letterSpacing: '.3rem',
@@ -25,7 +26,7 @@ const styles = {
         background: 'black'
     },
     btn: {
-       margin: '10px',
+        margin: '10px',
         fontWeight: 'bold',
         fontFamily: 'monospace'
     },
@@ -35,8 +36,9 @@ const styles = {
     },
     desc: {
         display: 'block',
-        margin: '20px auto',
-        width: '500px',
+        margin: '5px auto',
+        padding: 'auto 20px',
+        maxWidth: '500px',
         fontWeight: 700,
         fontFamily: 'monospace',
         textAlign: 'center'

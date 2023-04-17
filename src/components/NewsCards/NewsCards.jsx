@@ -2,7 +2,8 @@ import { Card, Grid, Grow, Typography, CardHeader, CardMedia, CardContent } from
 import Avatar from '@mui/material/Avatar';
 import styles from './styles'
 import NewsCard from "../NewsCard/NewsCard";
-import infoCards from "./infoCards"
+import infoCards from "./infoCards";
+import CardAvatarImg from '../../assets/mic.gif';
 
 export default function NewsCards({ theArticles }) {
 
@@ -11,7 +12,7 @@ export default function NewsCards({ theArticles }) {
             <Grid
                 container
                 direction="row"
-                justifyContent="space-between"
+                justifyContent="space-around"
                 alignItems="center"
                 mb={1}
             >
@@ -24,7 +25,9 @@ export default function NewsCards({ theArticles }) {
                                     subheader={`Try saying "${infoCard.text}"`}
                                     avatar={
                                         <Avatar sx={{ backgroundColor: 'white' }}>
-                                            <img src="../../../public/brain.svg" />
+                                            <img src={CardAvatarImg} style={{
+                                                width: '80px',
+                                            }} />
                                         </Avatar>
                                     }
                                 />
