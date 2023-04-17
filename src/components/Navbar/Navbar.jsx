@@ -12,13 +12,21 @@ function ResponsiveAppBar() {
                 <Toolbar disableGutters>
                     <Typography variant="h6" component="div"
                         style={{
-                            width: '100%', textAlign: 'center', fontFamily: 'monospace',
+                            width: '100%',
+                            textAlign: 'center'
+                        }}
+                    >
+                        <a href="/" style={{
+                            width: '100%',
+                            textAlign: 'center',
+                            fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
                             color: 'inherit',
                             textDecoration: 'none',
                         }}>
-                        NEWSBRAIN
+                            NEWSBRAIN
+                        </a>
                     </Typography>
                 </Toolbar>
             </Container>
