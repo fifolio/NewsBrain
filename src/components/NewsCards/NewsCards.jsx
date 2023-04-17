@@ -1,4 +1,12 @@
-import { Card, Grid, Grow, Typography, CardHeader, CardMedia, CardContent } from '@mui/material';
+import {
+    Card,
+    Grid,
+    Grow,
+    Typography,
+    CardHeader,
+    CardMedia,
+    CardContent
+} from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import styles from './styles'
 import NewsCard from "../NewsCard/NewsCard";
@@ -10,13 +18,12 @@ export default function NewsCards({ theArticles }) {
     return (
         <>
 
-            <Grow in>
+            <Grow in className="scrollToArticles">
                 <Grid
                     container
                     className={styles.container}
                     justifyContent="space-around"
                     alignItems="center"
-                    // gap={2}
                     spacing={.2}
                 >
                     {theArticles.map((article, index) => (

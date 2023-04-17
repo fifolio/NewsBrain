@@ -8,9 +8,17 @@ import Footer from './components/Footer/Footer'
 import HeroSection from './components/HeroSection/HeroSection';
 
 export default function App() {
-
-
   const [newsArticles, setNewsArticles] = useState([]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      const target = document.querySelector('.scrollToArticles')
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 2000);
+  }, [])
+
 
   useEffect(() => {
     console.clear();
@@ -26,11 +34,11 @@ export default function App() {
     });
   }, []);
 
+
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <br />
       <NewsCards theArticles={newsArticles} />
       <Footer />
     </div>
