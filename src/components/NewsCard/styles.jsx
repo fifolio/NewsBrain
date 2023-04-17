@@ -1,5 +1,7 @@
 const classes = {
     media: {
+        marginTop: '-35px',
+        padding: 0,
         height: 250,
     },
     border: {
@@ -11,8 +13,12 @@ const classes = {
     card: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         borderBottom: '10px solid white',
+        margin: 'auto 10px',
+        // background: 'yellow',
+        minHeight: '500px',
+        marginBottom: '15px'
     },
     activeCard: {
         borderBottom: '10px solid #22289a',

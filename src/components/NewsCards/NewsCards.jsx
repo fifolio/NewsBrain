@@ -1,4 +1,4 @@
-import { Card, Grid, Grow, Typography, CardHeader, CardMedia, CardContent, Box } from '@mui/material';
+import { Card, Grid, Grow, Typography, CardHeader, CardMedia, CardContent } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import styles from './styles'
 import NewsCard from "../NewsCard/NewsCard";
@@ -6,18 +6,19 @@ import infoCards from "./infoCards"
 
 export default function NewsCards({ theArticles }) {
 
-    if (!theArticles.length) {
-        return (
+    // if (!theArticles.length || theArticles.length) {
+    return (
+        <>
             <Grid
                 container
                 direction="row"
                 justifyContent="space-around"
                 alignItems="flex-start"
-                spacing={0.1}
+                mb={1}
             >
                 {infoCards.map((infoCard) => (
                     <Grid item lg={3} md={8} xs={12}>
-                        <Card sx={{ minWidth: 270, minHeight: 300, maxHeight: 400, margin: '15px 10px' }}>
+                        <Card sx={{ minWidth: 270, minHeight: 370, maxHeight: 400, margin: '15px 10px' }}>
 
                             <CardHeader
                                 title={infoCard.title}
@@ -46,64 +47,22 @@ export default function NewsCards({ theArticles }) {
                 ))
                 }
             </Grid >
-        )
-    }
-
-    // if (!theArticles.length) {
-    //     return (
-    //         <Grow in>
-    //             <Grid
-    //                 container
-    //                 className={styles.container}
-    //                 alignItems="stretch"
-    //                 spacing={3}
-    //             >
-    //                 {infoCards.map((infoCard) => (
-    //                     <Grid item xs={12} sm={6} md={4} lg={3} className={styles.infoCard}>
-    //                         <div className="styles.card" style={{ backgroundColor: infoCard.color }}>
-    //                             <Typography variant="h5">
-    //                                 {infoCard.title}
-    //                             </Typography>
-    //                             {infoCard.info ?
-    //                                 <Typography variant="h6">
-    //                                     <strong>
-    //                                         {infoCard.title.split(' ')[2]}:
-    //                                     </strong>
-    //                                     <br />
-    //                                     {infoCard.info}
-    //                                 </Typography> : null}
-    //                             <Typography variant="h6">
-    //                                 Try saying: <br />
-    //                                 <i>
-    //                                     {infoCard.text}
-    //                                 </i>
-    //                             </Typography>
-    //                         </div>
-    //                     </Grid>
-    //                 ))}
-    //             </Grid>
-    //         </Grow>
-    //     )
-    // }
-
-    return (
-        <Grow in>
-            <Grid
-                container
-                className={styles.container}
-                alignItems="stretch"
-                spacing={3}
-            >
-
-                {theArticles.map((article, index) => (
-
-                    <Grid key={index} item xs={6} md={4} lg={3} style={{ display: 'flex' }}>
-                        <NewsCard article={article} index={index} />
-                    </Grid>
-
-                ))}
-
-            </Grid>
-        </Grow>
+            <Grow in>
+                <Grid
+                    container
+                    className={styles.container}
+                    justifyContent="space-around"
+                    alignItems="center"
+                    // gap={2}
+                    spacing={.2}
+                >
+                    {theArticles.map((article, index) => (
+                        <Grid key={index} item lg={6} md={8} xs={12}>
+                            <NewsCard article={article} index={index} />
+                        </Grid>
+                    ))}
+                </Grid>
+            </Grow>
+        </>
     )
 }
