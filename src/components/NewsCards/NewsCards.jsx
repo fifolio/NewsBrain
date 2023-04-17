@@ -6,29 +6,29 @@ import infoCards from "./infoCards"
 
 export default function NewsCards({ theArticles }) {
 
-    // if (!theArticles.length || theArticles.length) {
     return (
         <>
             <Grid
                 container
                 direction="row"
-                justifyContent="space-around"
-                alignItems="flex-start"
+                justifyContent="space-between"
+                alignItems="center"
                 mb={1}
             >
                 {infoCards.map((infoCard) => (
                     <Grid item lg={3} md={8} xs={12}>
                         <Card sx={{ minWidth: 270, minHeight: 370, maxHeight: 400, margin: '15px 10px' }}>
-
-                            <CardHeader
-                                title={infoCard.title}
-                                subheader={`Try saying "${infoCard.text}"`}
-                                avatar={
-                                    <Avatar sx={{ backgroundColor: 'white' }}>
-                                        <img src="../../../public/brain.svg" />
-                                    </Avatar>
-                                }
-                            />
+                            <strong>
+                                <CardHeader
+                                    title={infoCard.title}
+                                    subheader={`Try saying "${infoCard.text}"`}
+                                    avatar={
+                                        <Avatar sx={{ backgroundColor: 'white' }}>
+                                            <img src="../../../public/brain.svg" />
+                                        </Avatar>
+                                    }
+                                />
+                            </strong>
                             <CardMedia
                                 component="img"
                                 height="190"

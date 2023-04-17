@@ -5,6 +5,7 @@ const alanKey = 'c5a66bb5abc2aa65c4db81d3452c51ab2e956eca572e1d8b807a3e2338fdd0d
 import Navbar from './components/Navbar/Navbar'
 import NewsCards from './components/NewsCards/NewsCards';
 import Footer from './components/Footer/Footer'
+import HeroSection from './components/HeroSection/HeroSection';
 
 export default function App() {
 
@@ -25,17 +26,11 @@ export default function App() {
     });
   }, []);
 
-  useEffect(() => {
-    console.log('This is from the State:', newsArticles);
-  }, [newsArticles]);
-
   return (
     <div>
       <Navbar />
-      <br />
-      <br />
-      <br />
-      <br />
+      <HeroSection />
+      <br className="scrollTarget" />
       <NewsCards theArticles={newsArticles} />
       <Footer />
     </div>

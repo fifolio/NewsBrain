@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 function ResponsiveAppBar() {
 
     return (
-        <AppBar position="fixed">
+        <AppBar position="fixed" color="">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography variant="h6" component="div"
