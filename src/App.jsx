@@ -30,7 +30,7 @@ export default function App() {
     <div>
       <Navbar />
       <HeroSection />
-      <br className="scrollTarget" />
+      <br />
       <NewsCards theArticles={newsArticles} />
       <Footer />
     </div>

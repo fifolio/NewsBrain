@@ -9,7 +9,25 @@ export default function NewsCards({ theArticles }) {
 
     return (
         <>
+
+            <Grow in>
+                <Grid
+                    container
+                    className={styles.container}
+                    justifyContent="space-around"
+                    alignItems="center"
+                    // gap={2}
+                    spacing={.2}
+                >
+                    {theArticles.map((article, index) => (
+                        <Grid key={index} item lg={6} md={8} xs={12}>
+                            <NewsCard article={article} index={index} />
+                        </Grid>
+                    ))}
+                </Grid>
+            </Grow>
             <Grid
+                className="scrollTarget"
                 container
                 direction="row"
                 justifyContent="space-around"
@@ -50,22 +68,6 @@ export default function NewsCards({ theArticles }) {
                 ))
                 }
             </Grid >
-            <Grow in>
-                <Grid
-                    container
-                    className={styles.container}
-                    justifyContent="space-around"
-                    alignItems="center"
-                    // gap={2}
-                    spacing={.2}
-                >
-                    {theArticles.map((article, index) => (
-                        <Grid key={index} item lg={6} md={8} xs={12}>
-                            <NewsCard article={article} index={index} />
-                        </Grid>
-                    ))}
-                </Grid>
-            </Grow>
         </>
     )
 }
