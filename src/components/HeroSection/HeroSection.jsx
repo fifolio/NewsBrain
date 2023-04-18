@@ -28,7 +28,7 @@ export default function HeroSection() {
                 </Typography>
                 <Grid >
                     <Button
-                        Item
+                        item
                         variant="contained"
                         style={styles.item.btn}
                         onClick={scrollToTarget}

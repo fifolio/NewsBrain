@@ -37,7 +37,7 @@ const styles = {
     desc: {
         display: 'block',
         margin: '5px auto',
-        padding: 'auto 20px',
+        // padding: 'auto 40px',
         maxWidth: '500px',
         fontWeight: 700,
         fontFamily: 'monospace',
