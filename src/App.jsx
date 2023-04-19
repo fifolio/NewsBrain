@@ -35,6 +35,9 @@ export default function App() {
     });
   }, []);
 
+  useEffect(() => {
+    setActiveArticle(-1)
+  }, [newsArticles])
 
   return (
     <div>

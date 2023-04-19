@@ -14,6 +14,7 @@ export default function NewsCard({ article, index, activeArticle }) {
         urlToImage
     } = article;
 
+
     return (
         <Card
             style={activeArticle === index ? activeCard.card : classes.card}>
