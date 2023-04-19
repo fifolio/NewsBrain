@@ -28,6 +28,7 @@ export default function App() {
       onCommand: ({ command, articles }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
+          setActiveArticle(-1);
         } else if (command === 'highlight') {
           setActiveArticle((prevActiveArticle) => prevActiveArticle + 1)
         }
@@ -35,9 +36,9 @@ export default function App() {
     });
   }, []);
 
-  useEffect(() => {
-    setActiveArticle(-1)
-  }, [newsArticles])
+  // useEffect(() => {
+  //   setActiveArticle(-1)
+  // }, [newsArticles])
 
   return (
     <div>
