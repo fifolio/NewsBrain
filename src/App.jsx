@@ -9,6 +9,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 
 export default function App() {
   const [newsArticles, setNewsArticles] = useState([]);
+  const [activeArticle, setActiveArticle] = useState(0)
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,8 +28,8 @@ export default function App() {
       onCommand: ({ command, articles }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
-        } else {
-          console.log('command NOT correct');
+        } else if (command === 'highlight') {
+          setActiveArticle((prevActiveArticle) => prevActiveArticle + 1)
         }
       }
     });
@@ -39,7 +40,7 @@ export default function App() {
     <div>
       <Navbar />
       <HeroSection />
-      <NewsCards theArticles={newsArticles} />
+      <NewsCards theArticles={newsArticles} activeArticle={activeArticle} />
       <Footer />
     </div>
   )
