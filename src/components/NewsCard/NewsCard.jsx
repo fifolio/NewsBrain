@@ -13,7 +13,7 @@ export default function NewsCard({ article, index, activeArticle }) {
         title,
         url,
         urlToImage
-    } = article;
+    } = article
 
 
     // Create Element References state

@@ -16,10 +16,10 @@ import CardAvatarImg from '../../assets/mic.gif';
 export default function NewsCards({ theArticles, activeArticle }) {
 
     return (
-        <>
-
-            <Grow in className="scrollToArticles">
+        <div className="scrollToArticles">
+            <Grow in>
                 <Grid
+
                     container
                     className={styles.container}
                     justifyContent="space-around"
@@ -34,13 +34,13 @@ export default function NewsCards({ theArticles, activeArticle }) {
                 </Grid>
             </Grow>
             <Grid
-                className="scrollTarget"
                 container
                 direction="row"
                 justifyContent="space-around"
                 alignItems="center"
                 mb={1}
             >
+                <span className="scrollTarget"></span>
                 {infoCards.map((infoCard) => (
                     <Grid item lg={3} md={8} xs={12}>
                         <Card sx={{ minWidth: 270, minHeight: 370, maxHeight: 400, margin: '15px 10px' }}>
@@ -75,6 +75,6 @@ export default function NewsCards({ theArticles, activeArticle }) {
                 ))
                 }
             </Grid >
-        </>
+        </div>
     )
 }

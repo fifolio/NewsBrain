@@ -1,4 +1,4 @@
-import { Grid, Typography, Button, Box } from '@mui/material';
+import { Grid, Typography, Button } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import styles from './style';
 import './background.css';
@@ -7,11 +7,12 @@ export default function HeroSection() {
 
     // Scroll down
     const scrollToTarget = () => {
-        const target = document.querySelector('.scrollTarget')
+        const target = document.querySelector('.scrollTarget');
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({ behavior: 'instant', block: 'center' });
         }
-    }
+    };
+
 
     return (
         <Grid container style={styles.main}>

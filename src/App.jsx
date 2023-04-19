@@ -11,14 +11,7 @@ export default function App() {
   const [newsArticles, setNewsArticles] = useState([]);
   const [activeArticle, setActiveArticle] = useState(-1)
 
-  useEffect(() => {
-    setTimeout(() => {
-      const target = document.querySelector('.scrollToArticles')
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 2000);
-  }, [])
+
 
 
   useEffect(() => {
@@ -29,6 +22,12 @@ export default function App() {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
           setActiveArticle(-1);
+
+          const target = document.querySelector('.scrollToArticles')
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+
         } else if (command === 'highlight') {
           setActiveArticle((prevActiveArticle) => prevActiveArticle + 1)
         }
@@ -36,9 +35,7 @@ export default function App() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   setActiveArticle(-1)
-  // }, [newsArticles])
+
 
   return (
     <div>

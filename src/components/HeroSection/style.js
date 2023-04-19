@@ -21,12 +21,15 @@ const styles = {
         margin: '10px',
         fontWeight: 'bold',
         fontFamily: 'monospace',   
-        background: 'black'
+        background: 'black',
+        textTransform: 'capitalize'
+
     },
     btn: {
         margin: '10px',
         fontWeight: 'bold',
-        fontFamily: 'monospace'
+        fontFamily: 'monospace',
+        textTransform: 'capitalize'
     },
     moto: {
         color: '#6d6d6d',
