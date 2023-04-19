@@ -21,7 +21,7 @@ export default function HeroSection() {
                     WELCOME TO NEWSBRAIN
                 </Typography>
                 <Typography variant="i" style={styles.item.moto}>
-                    "the ultimate source for up-to-date news from around the world"
+                    "the ultimate source for <br />up-to-date news from around the world"
                 </Typography>
                 <Typography variant="p" style={styles.item.desc}>
                     Our state-of-the-art news platform harnesses the latest in AI technology to bring you the latest news stories from a variety of sources, all at the touch of a button. With Alan.AI as our voice command tool, you can even use your voice to ask for the news and get instant updates on the stories that matter most to you

@@ -15,7 +15,8 @@ const styles = {
         textAlign: 'center',
         width: '100%',
         paddingTop: '100px',
-        fontWeight: 700,
+        paddingBottom: '15px',
+        fontWeight: 'bold',
         fontFamily: 'monospace',
         letterSpacing: '.3rem',
     },
@@ -33,12 +34,14 @@ const styles = {
     moto: {
         color: '#6d6d6d',
         fontStyle: 'italic',
+        // background: 'red',
     },
     desc: {
         display: 'block',
-        margin: '5px auto',
-        // padding: 'auto 40px',
-        maxWidth: '500px',
+        margin: '15px auto',
+        padding: '10px 20px',
+        // background: 'yellow',
+        maxWidth: '350px',
         fontWeight: 700,
         fontFamily: 'monospace',
         textAlign: 'center'
