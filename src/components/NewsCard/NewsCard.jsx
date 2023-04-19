@@ -1,13 +1,22 @@
 import { Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography, } from '@mui/material';
-
 import classes from './styles';
+import activeCard from './activeCard';
 
-export default function NewsCard({ article, index }) {
 
-    const { description, publishedAt, source, title, url, urlToImage } = article;
+export default function NewsCard({ article, index, activeArticle }) {
+
+    const {
+        description,
+        publishedAt,
+        source,
+        title,
+        url,
+        urlToImage
+    } = article;
 
     return (
-        <Card style={classes.card}>
+        <Card
+            style={activeArticle === index ? activeCard.card : classes.card}>
             <CardActionArea href={url} target="_blank">
                 <CardMedia style={classes.media} image={urlToImage || 'https://logodix.com/logo/570946.png'} title={title}>
                 </CardMedia>

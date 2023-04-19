@@ -9,7 +9,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 
 export default function App() {
   const [newsArticles, setNewsArticles] = useState([]);
-  const [activeArticle, setActiveArticle] = useState(0)
+  const [activeArticle, setActiveArticle] = useState(-1)
 
   useEffect(() => {
     setTimeout(() => {

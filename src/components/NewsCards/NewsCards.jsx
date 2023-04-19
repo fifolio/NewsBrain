@@ -13,7 +13,7 @@ import NewsCard from "../NewsCard/NewsCard";
 import infoCards from "./infoCards";
 import CardAvatarImg from '../../assets/mic.gif';
 
-export default function NewsCards({ theArticles }) {
+export default function NewsCards({ theArticles, activeArticle }) {
 
     return (
         <>
@@ -28,7 +28,7 @@ export default function NewsCards({ theArticles }) {
                 >
                     {theArticles.map((article, index) => (
                         <Grid key={index} item lg={6} md={8} xs={12}>
-                            <NewsCard article={article} index={index} />
+                            <NewsCard article={article} activeArticle={activeArticle} index={index} />
                         </Grid>
                     ))}
                 </Grid>
