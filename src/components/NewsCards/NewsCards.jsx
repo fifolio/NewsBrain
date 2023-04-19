@@ -17,9 +17,8 @@ export default function NewsCards({ theArticles, activeArticle }) {
 
     return (
         <div>
-            <Grow in>
+            <Grow in className="scrollToArticles">
                 <Grid
-
                     container
                     className={styles.container}
                     justifyContent="space-around"
@@ -40,9 +39,8 @@ export default function NewsCards({ theArticles, activeArticle }) {
                 alignItems="center"
                 mb={1}
             >
-                <span className="scrollTarget"></span>
                 {infoCards.map((infoCard) => (
-                    <Grid item lg={3} md={8} xs={12}>
+                    <Grid className="scrollTarget" item lg={3} md={8} xs={12}>
                         <Card sx={{ minWidth: 270, minHeight: 370, maxHeight: 400, margin: '15px 10px' }}>
                             <strong>
                                 <CardHeader

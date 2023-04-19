@@ -46,7 +46,6 @@ export default function NewsCard({ article, index, activeArticle }) {
 
     return (
         <Card
-            className="scrollToArticles"
             ref={elRefs[index]}
             style={activeArticle === index ? activeCard.card : classes.card}>
             <CardActionArea href={url} target="_blank">

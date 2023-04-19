@@ -30,6 +30,8 @@ export default function App() {
 
         } else if (command === 'highlight') {
           setActiveArticle((prevActiveArticle) => prevActiveArticle + 1)
+        } else if (command === 'open') {
+          window.open(articles[number].url, '_blank');
         }
       }
     });
