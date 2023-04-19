@@ -25,7 +25,7 @@ export default function App() {
 
           const target = document.querySelector('.scrollToArticles')
           if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
 
         } else if (command === 'highlight') {

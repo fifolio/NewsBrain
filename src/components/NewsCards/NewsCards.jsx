@@ -16,7 +16,7 @@ import CardAvatarImg from '../../assets/mic.gif';
 export default function NewsCards({ theArticles, activeArticle }) {
 
     return (
-        <div className="scrollToArticles">
+        <div>
             <Grow in>
                 <Grid
 
