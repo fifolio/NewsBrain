@@ -1,0 +1,20 @@
+.background {
+  /* width: 140px; */
+  /* height: 100vh; */
+  /* background-size: cover; */
+  /* margin: auto; */
+  /* background-attachment: relative; */
+  padding: 170px;
+  background-image: url('https://cdn.dribbble.com/users/32512/screenshots/4079875/button_element_c4d_by_gleb.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 25%;
+  margin-left: 25%;
+  z-index: -1;
+}
+
+@media (max-width: 1199px) {
+  .bg-div {
+    display: none;
+  }
+}

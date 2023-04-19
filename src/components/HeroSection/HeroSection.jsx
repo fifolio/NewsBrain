@@ -1,8 +1,7 @@
 import { Grid, Typography, Button, Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import styles from './style';
-
-// const background = 'https://cdn.dribbble.com/users/32512/screenshots/4079875/button_element_c4d_by_gleb.gif';
+import './background.css';
 
 export default function HeroSection() {
 
@@ -16,9 +15,10 @@ export default function HeroSection() {
 
     return (
         <Grid container style={styles.main}>
-            <Grid item style={styles.item1} xs={12} md={12} lg={12} my={6}>
+
+            <Grid item style={styles.item1} xs={12} md={12} lg={7} my={6}>
                 <Typography variant="h4" style={styles.item.title}>
-                    WELCOME TO NEWSBRAIN
+                    News Brain
                 </Typography>
                 <Typography variant="i" style={styles.item.moto}>
                     "the ultimate source for <br />up-to-date news from around the world"
@@ -46,9 +46,9 @@ export default function HeroSection() {
                     </Button>
                 </Grid>
             </Grid>
-            {/* <Box item>
-                <img src={background} style={styles.background} />
-            </Box> */}
+            <div lg={5} className="bg-div">
+                <div className="background"></div>
+            </div>
         </Grid >
     )
 }

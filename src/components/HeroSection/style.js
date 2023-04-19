@@ -1,24 +1,21 @@
 const styles = {
     main: {
         width: '100%',
-        marginTop: '20px',
+        marginTop: '100px',
         marginBottom: '100px',
         textAlign: 'center',
         color: 'black',
-    },
-    background: {
-        margin: '70px auto',
-        width: '600px',
     },
     item: {
         title: {
         textAlign: 'center',
         width: '100%',
-        paddingTop: '100px',
+        // paddingTop: '-20px',
         paddingBottom: '15px',
-        fontWeight: 'bold',
-        fontFamily: 'monospace',
-        letterSpacing: '.3rem',
+        fontWeight: '400',
+        fontSize: '75px',
+        fontFamily: `'Rouge Script', cursive`,
+        // letterSpacing: '.3rem',
     },
     btnGithub: {
         margin: '10px',
