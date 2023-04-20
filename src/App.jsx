@@ -13,7 +13,7 @@ export default function App() {
   const [newsArticles, setNewsArticles] = useState([]);
   const [activeArticle, setActiveArticle] = useState(-1)
 
-    useEffect(() => {
+  useEffect(() => {
     console.clear();
     alanBtn({
       key: alanKey,

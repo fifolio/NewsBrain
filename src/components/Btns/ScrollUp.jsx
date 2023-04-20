@@ -30,7 +30,7 @@ export default function ScrollUp() {
     const buttonStyle = {
         position: "fixed",
         bottom: "50px",
-        left: "75px",
+        left: "70px",
         transform: "translateX(-50%)",
         padding: "10px",
         background: 'black',
