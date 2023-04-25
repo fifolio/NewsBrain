@@ -10,7 +10,7 @@
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
 <p class="has-line-data" data-line-start="8" data-line-end="9">To get started with News Brain, you’ll need to clone this repository to your local machine:</p>
-<pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span> https://github.com/fifolio/NewsBrain.git
+<pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/NewsBrain.git">https://github.com/fifolio/NewsBrain.git</a>
 </code></pre>
 <p class="has-line-data" data-line-start="13" data-line-end="14">Once you have the repository on your local machine, navigate to the project directory and install the necessary dependencies:</p>
 <pre><code class="has-line-data" data-line-start="16" data-line-end="19" class="language-sh"><span class="hljs-built_in">cd</span> NewsBrain
