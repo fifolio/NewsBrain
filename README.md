@@ -2,6 +2,9 @@
 <h5 class="code-line" data-line-start=1 data-line-end=2 ><a id="_the_ultimate_source_for_uptodate_news_from_around_the_world__1"></a><em>“the ultimate source for up-to-date news from around the world”</em></h5>
 <p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" src="https://i.ibb.co/5vf7vCx/newsbrain-netlify-app.png" alt="N|Solid"></p>
 <p class="has-line-data" data-line-start="5" data-line-end="6">News Brain is an Artificial Intelligence React News Application that uses Alan AI, a speech recognition software, to allow users to control everything in the app using their voice. With News Brain, users can get up-to-date news and information in a hands-free and convenient way.</p>
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/820164375?h=43a1eeb86c" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
 <p class="has-line-data" data-line-start="8" data-line-end="9">To get started with News Brain, you’ll need to clone this repository to your local machine:</p>
 <pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span> https://github.com/fifolio/NewsBrain.git
