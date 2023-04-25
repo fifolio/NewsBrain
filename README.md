@@ -5,6 +5,9 @@
 
 [![watch the promo video](https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png | width=400px)](https://player.vimeo.com/video/820164375?h=43a1eeb86c)
 
+<a href="link_url"><img src="https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png" alt="alt text" style="width:400px; height:300px;"></a>
+
+
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
 <p class="has-line-data" data-line-start="8" data-line-end="9">To get started with News Brain, you’ll need to clone this repository to your local machine:</p>
