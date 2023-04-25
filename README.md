@@ -5,7 +5,7 @@
 
 
 <a href="https://player.vimeo.com/video/820164375?h=43a1eeb86c" target="_blank">
-  <img src="https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png" alt="watch the promo video" style="width:150px; height:50px;" />
+  <img src="https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png" alt="watch the promo video" style="width:155px; height:50px;" />
 </a>
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
