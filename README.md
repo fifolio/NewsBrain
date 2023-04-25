@@ -3,7 +3,7 @@
 <p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" src="https://i.ibb.co/5vf7vCx/newsbrain-netlify-app.png" alt="N|Solid"></p>
 <p class="has-line-data" data-line-start="5" data-line-end="6">News Brain is an Artificial Intelligence React News Application that uses Alan AI, a speech recognition software, to allow users to control everything in the app using their voice. With News Brain, users can get up-to-date news and information in a hands-free and convenient way.</p>
 
-[![watch the promo video](https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png){width=200 height=100}](https://player.vimeo.com/video/820164375?h=43a1eeb86c)
+[![watch the promo video](https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png){width="200px" height="100px"}](https://player.vimeo.com/video/820164375?h=43a1eeb86c)
 
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
