@@ -5,7 +5,7 @@
 
 
 <a href="https://player.vimeo.com/video/820164375?h=43a1eeb86c">
-  <img src="https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png" alt="watch the promo video" style="width:50px; height:50px;" />
+  <img src="https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png" alt="watch the promo video" style="width:150px; height:50px;" />
 </a>
 
 
