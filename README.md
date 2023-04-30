@@ -3,10 +3,6 @@
 <p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" src="https://i.ibb.co/5vf7vCx/newsbrain-netlify-app.png" alt="N|Solid"></p>
 <p class="has-line-data" data-line-start="5" data-line-end="6">News Brain is an Artificial Intelligence React News Application that uses Alan AI, a speech recognition software, to allow users to control everything in the app using their voice. With News Brain, users can get up-to-date news and information in a hands-free and convenient way.</p>
 
-<a href="https://player.vimeo.com/video/820164375?h=43a1eeb86c" target="_blank">
-  <img src="https://reachone-touchone.org/wp-content/uploads/watch-video-button-01.png" alt="watch the promo video" style="width:155px; height:50px;" />
-</a>
-
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
 <p class="has-line-data" data-line-start="8" data-line-end="9">To get started with News Brain, you’ll need to clone this repository to your local machine:</p>
 <pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/NewsBrain.git "> https://github.com/fifolio/NewsBrain.git</a>
