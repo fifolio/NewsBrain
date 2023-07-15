@@ -29,7 +29,7 @@ const styles = {
         margin: '10px',
         fontWeight: 'bold',
         fontFamily: 'monospace',   
-        background: 'whait',
+        background: 'white',
         color: 'black',
         textTransform: 'capitalize'
 
