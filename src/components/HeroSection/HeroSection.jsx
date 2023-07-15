@@ -43,7 +43,15 @@ export default function HeroSection() {
                         target="_blank"
                         startIcon={<GitHubIcon />}
                         style={styles.item.btnGithub}>
-                        Github Repository
+                        Github Repository 
+                    </Button>
+                    <Button
+                        Item
+                        variant="contained"
+                        href="https://www.linkedin.com/pulse/newsbrain-app-firas-dabbabi/"
+                        target="_blank"
+                        style={styles.item.btnWatch}>
+                        Watch Tutorial 
                     </Button>
                 </Grid>
             </Grid>

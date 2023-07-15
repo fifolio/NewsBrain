@@ -25,6 +25,15 @@ const styles = {
         textTransform: 'capitalize'
 
     },
+    btnWatch: {
+        margin: '10px',
+        fontWeight: 'bold',
+        fontFamily: 'monospace',   
+        background: 'whait',
+        color: 'black',
+        textTransform: 'capitalize'
+
+    },
     btn: {
         margin: '10px',
         fontWeight: 'bold',
