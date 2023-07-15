@@ -30,6 +30,7 @@ const styles = {
         fontWeight: 'bold',
         fontFamily: 'monospace',   
         background: 'white',
+        border: '1px solid gray',
         color: 'black',
         textTransform: 'capitalize'
 
